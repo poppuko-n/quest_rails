@@ -22,7 +22,7 @@
 
         <% @articles.each do |article| %>
           <div class="article-preview">
-            <a href="/article/how-to-build-webapps-that-scale" class="preview-link">
+            <a href="/articles/<%= article.id %>" class="preview-link">
               <h1><%= article.title %></h1>
               <p>This is the description for the post.</p>
               <span>Read more...</span>
