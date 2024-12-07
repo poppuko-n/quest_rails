@@ -7,9 +7,14 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    return unless @user.save
-
-    redirect_to articles_path
+    if @user.save
+      redirect_to articles_path
+    else
+      # TODO: flashメッセージ入れる
+      # e.g. @user.errors.full_messages.to_sentence を文字列として入れてやる。
+      # ["エラー1", "エラー2"] => "エラー1, エラー2"
+      render :new
+    end
   end
 
   def login_form; end

@@ -60,6 +60,11 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   # Github: https://github.com/rubocop/rubocop-rspec
   gem 'rubocop-rspec', require: false
+
+  # Github: https://github.com/pry/pry-rails
+  gem 'pry-rails' # Pryをデフォルトのコンソールとして使用できるようにする(Pryの機能をRailsコンソール内で利用することができる)
+  # Github: https://github.com/deivid-rodriguez/pry-byebug
+  gem 'pry-byebug' # binding.pryを使えるようにする
 end
 
 group :development do
