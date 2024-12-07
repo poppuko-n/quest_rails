@@ -65,6 +65,12 @@ group :development, :test do
   gem 'pry-rails' # Pryをデフォルトのコンソールとして使用できるようにする(Pryの機能をRailsコンソール内で利用することができる)
   # Github: https://github.com/deivid-rodriguez/pry-byebug
   gem 'pry-byebug' # binding.pryを使えるようにする
+
+  # Github: https://github.com/thoughtbot/factory_bot
+  gem 'factory_bot_rails' # FactoryBotのgem
+
+  # Github: https://github.com/rspec/rspec-rails
+  gem 'rspec-rails' # RSpecのgem
 end
 
 group :development do
